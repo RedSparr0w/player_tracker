@@ -5,10 +5,6 @@ setblock 0 1 1 minecraft:shulker_box
 setblock 0 2 1 minecraft:crimson_sign
 
 #> Create scoreboards for player info
-##> Player positions
-scoreboard objectives add pt.xpos dummy
-scoreboard objectives add pt.ypos dummy
-scoreboard objectives add pt.zpos dummy
 ##> Check when players join the game
 scoreboard objectives add pt.joined_game minecraft.custom:minecraft.leave_game
 ##> Check if player ID is up to date

@@ -11,9 +11,9 @@ execute if entity @s[nbt={Dimension:-1}] unless entity @a[tag=tracking,nbt={Dime
 execute if entity @s[nbt={Dimension:1}] unless entity @a[tag=tracking,nbt={Dimension:1}] run data modify storage hnr:compass Items[].tag.LodestoneDimension set value "minecraft:the_nether"
 
 #> updates x, y and z positions of the compass
-execute in minecraft:overworld run execute store result storage hnr:compass Items[].tag.LodestonePos.X int 1 run scoreboard players get @a[tag=tracking,limit=1] pt.xpos
-execute in minecraft:overworld run execute store result storage hnr:compass Items[].tag.LodestonePos.Y int 1 run scoreboard players get @a[tag=tracking,limit=1] pt.ypos
-execute in minecraft:overworld run execute store result storage hnr:compass Items[].tag.LodestonePos.Z int 1 run scoreboard players get @a[tag=tracking,limit=1] pt.zpos
+execute in minecraft:overworld run execute store result storage hnr:compass Items[].tag.LodestonePos.X int 1 run data get entity @a[tag=tracking,limit=1] Pos[0]
+execute in minecraft:overworld run execute store result storage hnr:compass Items[].tag.LodestonePos.Y int 1 run data get entity @a[tag=tracking,limit=1] Pos[1]
+execute in minecraft:overworld run execute store result storage hnr:compass Items[].tag.LodestonePos.Z int 1 run data get entity @a[tag=tracking,limit=1] Pos[2]
 execute in minecraft:overworld run data merge block 0 2 1 {Text1:'{"selector":"@a[tag=tracking]"}'}
 execute in minecraft:overworld run data modify storage hnr:compass Items[].tag.display.Name set from block 0 2 1 Text1
 tag @a[tag=tracking] remove tracking
