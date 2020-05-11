@@ -1,6 +1,8 @@
 #> Reset the scoreboard so this isn't run multiple times
 scoreboard players set @s pt.player_list 0
 
+tellraw @s [" "]
+tellraw @s [" "]
 tellraw @s [{"text":"===== Select Player to track =====","color":"gold"}]
 tellraw @s [{"text":"[Nearest Player]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger pt.tracking_id set 0"},"hoverEvent":{"action":"show_text","value":{"text":"Track the nearest player!"}}}]
 execute if entity @a[scores={pt.player_id=0..9}] run function player_tracker:players/player_list/00

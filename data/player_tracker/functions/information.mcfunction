@@ -2,6 +2,7 @@
 scoreboard players set @s pt.info 0
 
 tellraw @s [" "]
+tellraw @s [" "]
 tellraw @s {"text":"===== Player Tracker Information =====","bold":true,"color":"gold"}
 tellraw @s ["Welcome to Player Tracker,"]
 tellraw @s ["",{"text":"When the compass is in your hotbar/offhand, the position of the tracked player will be updated automatically."}]
