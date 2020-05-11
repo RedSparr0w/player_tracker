@@ -22,8 +22,11 @@ scoreboard objectives add pt.get_compass trigger
 scoreboard objectives add pt.tracking_id trigger
 scoreboard objectives add pt.player_list trigger
 
-#> Bump reset score
+#> Reset Player IDs
+scoreboard players reset * pt.player_id
 scoreboard players set total_ids pt.player_id 0
+
+#> Bump reset score
 scoreboard players add count pt.reset 1
 
 #> Show menu to players
