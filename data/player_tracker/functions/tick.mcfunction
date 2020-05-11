@@ -12,4 +12,5 @@ scoreboard players enable @a pt.tracking_id
 scoreboard players enable @a pt.player_list
 
 #> Remove any rouge tracking compasses
-kill @e[nbt={Item:{tag:{compass_type:"tracking_device"}}}]
+execute at @e[type=minecraft:item,nbt={Item:{tag:{compass_type:"tracking_device"}}}] as @p run function player_tracker:menu
+kill @e[type=minecraft:item,nbt={Item:{tag:{compass_type:"tracking_device"}}}]
