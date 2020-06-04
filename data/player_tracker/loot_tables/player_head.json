@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "set_lore",
+              "lore": [{"text": "Click to track this player","italic":"false"}]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

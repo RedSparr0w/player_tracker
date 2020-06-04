@@ -10,6 +10,7 @@ scoreboard objectives add pt.joined_game minecraft.custom:minecraft.leave_game
 ##> Check if player ID is up to date
 scoreboard objectives add pt.player_id dummy
 scoreboard objectives add pt.reset dummy
+data remove storage pt:player_heads Items
 
 #> Add triggers
 ##> Show the menu
@@ -24,7 +25,7 @@ scoreboard objectives add pt.player_list trigger
 
 #> Reset Player IDs
 scoreboard players reset * pt.player_id
-scoreboard players set total_ids pt.player_id 0
+scoreboard players set #total_ids pt.player_id 0
 
 #> Bump reset score
 scoreboard players add count pt.reset 1
