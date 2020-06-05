@@ -2,8 +2,8 @@
 
 This datapack uses the compass to track other players in your world
 Made for Minecraft Java Edition 1.16+
-<br/>![PLayer Tracker GUI](https://i.imgur.com/N3WejR0.png)
-<br/>![image of compass](https://i.imgur.com/7iyf7OK.png)
+<br/>![PLayer Tracker GUI](https://i.imgur.com/pEtIx9y.png)
+<br/>![image of compass](https://i.imgur.com/7G26iD6.png)
 
 ## Download:
 https://github.com/RedSparr0w/player_tracker/releases/latest/download/player_tracker.zip
@@ -29,7 +29,7 @@ Players can be tracked in the Overworld, Nether and End dimensions.
 While holding the tracking compass in your main hand
 <br/>Look towards the ground
 <br/>Right click
-<br/>![PLayer Tracker GUI](https://i.imgur.com/Xhbpdb1.png)
+<br/>![PLayer Tracker GUI](https://i.imgur.com/IBqFqpD.png)
 
 #### View a list of players you can track:
 ```
