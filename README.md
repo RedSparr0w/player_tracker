@@ -26,10 +26,10 @@ View information
 /trigger pt.info
 ```
 
-View players you can track
+While holding the tracking compass in your main hand, look towards the ground then right click to view the menu of players you can track
+<br/>![PLayer Tracker GUI](https://i.imgur.com/IQGP2hr.png)
+
+View a list of players you can track
 ```
 /trigger pt.player_list
 ```
-
-While holding the tracking compass, look towards the ground then right click to view the menu of players you can track
-<br/>![PLayer Tracker GUI](https://i.imgur.com/IQGP2hr.png)
