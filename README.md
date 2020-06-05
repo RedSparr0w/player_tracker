@@ -2,7 +2,9 @@
 
 This datapack uses the compass to track other players in your world
 Made for Minecraft Java Edition 1.16+
-![image of compass](https://i.imgur.com/7iyf7OK.png)
+<br/>![PLayer Tracker GUI](https://i.imgur.com/N3WejR0.png)
+<br/>![PLayer Tracker GUI](https://i.imgur.com/IQGP2hr.png)
+<br/>![image of compass](https://i.imgur.com/7iyf7OK.png)
 
 ## Download:
 https://github.com/RedSparr0w/player_tracker/releases/latest/download/player_tracker.zip
@@ -28,3 +30,6 @@ View players you can track
 ```
 /trigger pt.player_list
 ```
+
+While holding the tracking compass, look towards the ground then right click to view the menu of players you can track
+<br/>![PLayer Tracker GUI](https://i.imgur.com/IQGP2hr.png)
