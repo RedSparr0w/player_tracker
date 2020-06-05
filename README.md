@@ -35,3 +35,8 @@ While holding the tracking compass in your main hand
 ```
 /trigger pt.player_list
 ```
+
+#### Get a compass:
+```
+/trigger pt.get_compass
+```
