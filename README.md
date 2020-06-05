@@ -26,9 +26,11 @@ Players can be tracked in the Overworld, Nether and End dimensions.
 ```
 
 #### View a menu of players you can track:
+```
 While holding the tracking compass in your main hand
-<br/>Look towards the ground
-<br/>Right click
+Look towards the ground
+Right click
+```
 <br/>![PLayer Tracker GUI](https://i.imgur.com/IBqFqpD.png)
 
 #### View a list of players you can track:
