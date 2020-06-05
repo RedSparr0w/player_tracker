@@ -32,6 +32,7 @@ scoreboard objectives add pt.info trigger
 scoreboard objectives add pt.get_compass trigger
 ##> Tracking specific Players
 scoreboard objectives add pt.tracking_id trigger
+scoreboard players reset * pt.tracking_id
 scoreboard objectives add pt.player_list trigger
 
 #> Bump reset score

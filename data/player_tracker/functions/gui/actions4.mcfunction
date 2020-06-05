@@ -28,7 +28,7 @@ execute unless data entity @s Items[{Slot:22b,tag:{gui_item:1b}}] if data storag
 execute unless data entity @s Items[{Slot:23b,tag:{gui_item:1b}}] if data storage pt:player_heads Items[97] run scoreboard players set @p[distance=..3] pt.tracking_id 98
 execute unless data entity @s Items[{Slot:24b,tag:{gui_item:1b}}] if data storage pt:player_heads Items[98] run scoreboard players set @p[distance=..3] pt.tracking_id 99
 execute unless data entity @s Items[{Slot:25b,tag:{gui_item:1b}}] if data storage pt:player_heads Items[99] run scoreboard players set @p[distance=..3] pt.tracking_id 100
-execute unless data entity @s Items[{Slot:26b,tag:{gui_item:1b}}] run scoreboard players add @p[distance=..3] pt.gui_page 1
+execute unless data entity @s Items[{Slot:26b,tag:{gui_item:1b}}] if data storage pt:player_heads Items[99] run scoreboard players set @p[distance=..3] pt.tracking_id 101
 
 #> Drop items player put in the chest
 execute unless data entity @s Items[{Slot:0b,tag:{gui_item:1b}}] run execute if data entity @s Items[{Slot:0b}] run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:stone",tag:{gui_item:1b},Count:1b},Tags:["gui_dropitem"]}
