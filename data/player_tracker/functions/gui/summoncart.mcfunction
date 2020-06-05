@@ -1,0 +1,1 @@
+summon minecraft:chest_minecart ~ ~-0.69 ~ {Silent:1,NoAI:1,NoGravity:1,Invulnerable:1,CustomDisplayTile:1d,DisplayState:{Name:"air"},DisplayOffset:1d,CustomName:"{\"text\":\"Player Tracker\"}",Tags:["gui_container"],gui_item:1b}

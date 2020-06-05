@@ -11,6 +11,17 @@ scoreboard objectives add pt.joined_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add pt.player_id dummy
 scoreboard objectives add pt.reset dummy
 data remove storage pt:player_heads Items
+##> Reset Player IDs
+scoreboard players reset * pt.player_id
+scoreboard players set #total_ids pt.player_id 0
+
+#> Gui
+scoreboard objectives add pt.gui dummy
+scoreboard players set #current_slot pt.gui 0
+scoreboard players set #pages pt.gui 1
+##> TODO: rename these
+scoreboard objectives add gui_count dummy
+scoreboard objectives add pt.gui_page dummy
 
 #> Add triggers
 ##> Show the menu
@@ -22,10 +33,6 @@ scoreboard objectives add pt.get_compass trigger
 ##> Tracking specific Players
 scoreboard objectives add pt.tracking_id trigger
 scoreboard objectives add pt.player_list trigger
-
-#> Reset Player IDs
-scoreboard players reset * pt.player_id
-scoreboard players set #total_ids pt.player_id 0
 
 #> Bump reset score
 scoreboard players add count pt.reset 1
