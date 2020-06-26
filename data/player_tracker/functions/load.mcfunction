@@ -24,8 +24,10 @@ scoreboard objectives add gui_count dummy
 scoreboard objectives add pt.gui_page dummy
 
 #> Add triggers
-##> Show the menu
+##> Show main menu
 scoreboard objectives add pt.menu trigger
+##> Show settings menu
+scoreboard objectives add pt.settings trigger
 ##> Show datapack information
 scoreboard objectives add pt.info trigger
 ##> Get a compass
@@ -37,6 +39,9 @@ scoreboard objectives add pt.player_list trigger
 
 #> Bump reset score
 scoreboard players add count pt.reset 1
+
+#> Load default settings
+function player_tracker:settings/load
 
 #> Show menu to players
 execute as @a run function player_tracker:players/apply_id
