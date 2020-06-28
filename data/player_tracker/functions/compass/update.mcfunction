@@ -1,21 +1,19 @@
 #> Create pt:compass storage and update nbt
-execute in minecraft:overworld run data modify storage pt:compass Items[] set from entity @s Inventory[{tag:{compass_type:"tracking_device"}}]
-execute in minecraft:overworld run data modify storage pt:compass Items[].Slot set value 0b
+data modify storage pt:compass Items[] set from entity @s Inventory[{tag:{compass_type:"tracking_device"}}]
+data modify storage pt:compass Items[].Slot set value 0b
 
-#> Set dimension to our current dimension
-execute in minecraft:overworld if entity @s[nbt={Dimension:"minecraft:overworld"}] run data modify storage pt:compass Items[].tag.LodestoneDimension set value "minecraft:overworld"
-execute in minecraft:overworld if entity @s[nbt={Dimension:"minecraft:the_nether"}] run data modify storage pt:compass Items[].tag.LodestoneDimension set value "minecraft:the_nether"
-execute in minecraft:overworld if entity @s[nbt={Dimension:"minecraft:the_end"}] run data modify storage pt:compass Items[].tag.LodestoneDimension set value "minecraft:the_end"
-execute if entity @s[nbt={Dimension:"minecraft:overworld"}] unless entity @a[tag=tracking,nbt={Dimension:"minecraft:overworld"}] run data modify storage pt:compass Items[].tag.LodestoneDimension set value "minecraft:the_end"
-execute if entity @s[nbt={Dimension:"minecraft:the_nether"}] unless entity @a[tag=tracking,nbt={Dimension:"minecraft:the_nether"}] run data modify storage pt:compass Items[].tag.LodestoneDimension set value "minecraft:the_end"
-execute if entity @s[nbt={Dimension:"minecraft:the_end"}] unless entity @a[tag=tracking,nbt={Dimension:"minecraft:the_end"}] run data modify storage pt:compass Items[].tag.LodestoneDimension set value "minecraft:the_nether"
+#> Set dimension to tracked players current dimension
+data modify storage pt:compass Items[].tag.LodestoneDimension set from entity @a[tag=tracking,limit=1] Dimension
 
-#> updates x, y and z positions of the compass
-execute in minecraft:overworld run execute store result storage pt:compass Items[].tag.LodestonePos.X int 1 run data get entity @a[tag=tracking,limit=1] Pos[0]
-execute in minecraft:overworld run execute store result storage pt:compass Items[].tag.LodestonePos.Y int 1 run data get entity @a[tag=tracking,limit=1] Pos[1]
-execute in minecraft:overworld run execute store result storage pt:compass Items[].tag.LodestonePos.Z int 1 run data get entity @a[tag=tracking,limit=1] Pos[2]
+#> updates x and z positions of the compass
+execute store result storage pt:compass Items[].tag.LodestonePos.X int 1 run data get entity @a[tag=tracking,limit=1] Pos[0]
+execute store result storage pt:compass Items[].tag.LodestonePos.Z int 1 run data get entity @a[tag=tracking,limit=1] Pos[2]
+
+#> Update compass name using a sign
 execute in minecraft:overworld run data merge block 0 2 1 {Text1:'{"selector":"@a[tag=tracking]"}'}
 execute in minecraft:overworld run data modify storage pt:compass Items[].tag.display.Name set from block 0 2 1 Text1
+
+#> remove tag from player being tracked
 tag @a[tag=tracking] remove tracking
 
 #> updates shulker box from pt:compass storage Items[]
@@ -34,5 +32,5 @@ execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:
 execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:8b,tag:{compass_type:"tracking_device"}}]}] hotbar.8 1 mine 0 1 1 air{drop_contents:1b}
 
 #> Remove pt:compass and block items
-execute in minecraft:overworld run data remove storage pt:compass Items
+data remove storage pt:compass Items
 execute in minecraft:overworld run data remove block 0 1 1 Items
