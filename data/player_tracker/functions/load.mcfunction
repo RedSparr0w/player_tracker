@@ -5,6 +5,13 @@ setblock 0 1 1 minecraft:shulker_box
 setblock 0 2 1 minecraft:crimson_sign
 
 #> Create scoreboards for player info
+##> Store last co-ords in each dimension
+scoreboard objectives add pt.overworld_x dummy
+scoreboard objectives add pt.overworld_z dummy
+scoreboard objectives add pt.the_nether_x dummy
+scoreboard objectives add pt.the_nether_z dummy
+scoreboard objectives add pt.the_end_x dummy
+scoreboard objectives add pt.the_end_z dummy
 ##> Check when players join the game
 scoreboard objectives add pt.joined_game minecraft.custom:minecraft.leave_game
 ##> Check if player ID is up to date

@@ -18,7 +18,13 @@ Players can be tracked in the Overworld, Nether and End dimensions.
 ```
 /trigger pt.menu
 ```
-![](https://i.imgur.com/5euDtSH.png)
+![](https://i.imgur.com/iWCgRSh.png)
+
+#### View settings menu:
+```
+/trigger pt.settings
+```
+![](https://i.imgur.com/Y2MAXkT.png)
 
 #### View information:
 ```
