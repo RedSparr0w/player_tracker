@@ -1,35 +1,35 @@
 #> Fill in default items
-replaceitem entity @s container.0 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.1 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.2 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.3 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.4 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.5 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.6 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.7 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.8 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.9 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.10 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.11 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.12 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.13 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.14 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.15 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.16 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.17 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.18 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.19 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.20 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.21 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.22 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.23 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.24 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.25 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.26 minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.0 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.1 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.2 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.3 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.4 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.5 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.6 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.7 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.8 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.9 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.10 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.11 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.12 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.13 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.14 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.15 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.16 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.17 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.18 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.19 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.20 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.21 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.22 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.23 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.24 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.25 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.26 with minecraft:black_stained_glass_pane{display:{Name:"[{\"text\":\"\",\"italic\":false}]"},gui_item:1b}
 
 #> Next/Previous Page
-replaceitem entity @s container.18 minecraft:arrow{display:{Name:"[{\"text\":\"Previous Page (1)\",\"italic\":false}]"},gui_item:1b}
-replaceitem entity @s container.26 minecraft:arrow{display:{Name:"[{\"text\":\"Next Page (3)\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.18 with minecraft:arrow{display:{Name:"[{\"text\":\"Previous Page (1)\",\"italic\":false}]"},gui_item:1b}
+item replace entity @s container.26 with minecraft:arrow{display:{Name:"[{\"text\":\"Next Page (3)\",\"italic\":false}]"},gui_item:1b}
 
 #> Fill in player heads
 data modify entity @s Items[0] set from storage pt:player_heads Items[25]
