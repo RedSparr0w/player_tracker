@@ -14,25 +14,25 @@ execute if entity @s[nbt={Dimension:"minecraft:the_end"}] unless entity @a[tag=t
 execute in minecraft:overworld run execute store result storage pt:compass Items[].tag.LodestonePos.X int 1 run data get entity @a[tag=tracking,limit=1] Pos[0]
 execute in minecraft:overworld run execute store result storage pt:compass Items[].tag.LodestonePos.Y int 1 run data get entity @a[tag=tracking,limit=1] Pos[1]
 execute in minecraft:overworld run execute store result storage pt:compass Items[].tag.LodestonePos.Z int 1 run data get entity @a[tag=tracking,limit=1] Pos[2]
-execute in minecraft:overworld run data merge block 0 2 1 {Text1:'{"selector":"@a[tag=tracking]"}'}
-execute in minecraft:overworld run data modify storage pt:compass Items[].tag.display.Name set from block 0 2 1 Text1
+execute in minecraft:overworld run data merge block 0 -62 1 {Text1:'{"selector":"@a[tag=tracking]"}'}
+execute in minecraft:overworld run data modify storage pt:compass Items[].tag.display.Name set from block 0 -62 1 Text1
 tag @a[tag=tracking] remove tracking
 
 #> updates shulker box from pt:compass storage Items[]
-execute in minecraft:overworld run data modify block 0 1 1 Items[] set from storage pt:compass Items[]
+execute in minecraft:overworld run data modify block 0 -63 1 Items[] set from storage pt:compass Items[]
 
 #> Replace "tracking_device" in offhand/hotbar, updating Player position
-execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:-106b,tag:{compass_type:"tracking_device"}}]}] weapon.offhand 1 mine 0 1 1 air{drop_contents:1b}
-execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:0b,tag:{compass_type:"tracking_device"}}]}] hotbar.0 1 mine 0 1 1 air{drop_contents:1b}
-execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:1b,tag:{compass_type:"tracking_device"}}]}] hotbar.1 1 mine 0 1 1 air{drop_contents:1b}
-execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:2b,tag:{compass_type:"tracking_device"}}]}] hotbar.2 1 mine 0 1 1 air{drop_contents:1b}
-execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:3b,tag:{compass_type:"tracking_device"}}]}] hotbar.3 1 mine 0 1 1 air{drop_contents:1b}
-execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:4b,tag:{compass_type:"tracking_device"}}]}] hotbar.4 1 mine 0 1 1 air{drop_contents:1b}
-execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:5b,tag:{compass_type:"tracking_device"}}]}] hotbar.5 1 mine 0 1 1 air{drop_contents:1b}
-execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:6b,tag:{compass_type:"tracking_device"}}]}] hotbar.6 1 mine 0 1 1 air{drop_contents:1b}
-execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:7b,tag:{compass_type:"tracking_device"}}]}] hotbar.7 1 mine 0 1 1 air{drop_contents:1b}
-execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:8b,tag:{compass_type:"tracking_device"}}]}] hotbar.8 1 mine 0 1 1 air{drop_contents:1b}
+execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:-106b,tag:{compass_type:"tracking_device"}}]}] weapon.offhand 1 mine 0 -63 1 air{drop_contents:1b}
+execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:0b,tag:{compass_type:"tracking_device"}}]}] hotbar.0 1 mine 0 -63 1 air{drop_contents:1b}
+execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:1b,tag:{compass_type:"tracking_device"}}]}] hotbar.1 1 mine 0 -63 1 air{drop_contents:1b}
+execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:2b,tag:{compass_type:"tracking_device"}}]}] hotbar.2 1 mine 0 -63 1 air{drop_contents:1b}
+execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:3b,tag:{compass_type:"tracking_device"}}]}] hotbar.3 1 mine 0 -63 1 air{drop_contents:1b}
+execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:4b,tag:{compass_type:"tracking_device"}}]}] hotbar.4 1 mine 0 -63 1 air{drop_contents:1b}
+execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:5b,tag:{compass_type:"tracking_device"}}]}] hotbar.5 1 mine 0 -63 1 air{drop_contents:1b}
+execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:6b,tag:{compass_type:"tracking_device"}}]}] hotbar.6 1 mine 0 -63 1 air{drop_contents:1b}
+execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:7b,tag:{compass_type:"tracking_device"}}]}] hotbar.7 1 mine 0 -63 1 air{drop_contents:1b}
+execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:8b,tag:{compass_type:"tracking_device"}}]}] hotbar.8 1 mine 0 -63 1 air{drop_contents:1b}
 
 #> Remove pt:compass and block items
-execute in minecraft:overworld run data remove storage pt:compass Items
-execute in minecraft:overworld run data remove block 0 1 1 Items
+# execute in minecraft:overworld run data remove storage pt:compass Items
+# execute in minecraft:overworld run data remove block 0 -63 1 Items
