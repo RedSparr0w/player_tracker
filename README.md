@@ -1,6 +1,7 @@
 # Player Tracker
 
 This datapack uses the compass to track other players in your world
+
 Made for Minecraft Java Edition 1.18+
 <br/>![PLayer Tracker GUI](https://i.imgur.com/pEtIx9y.png)
 <br/>![image of compass](https://i.imgur.com/7G26iD6.png)
