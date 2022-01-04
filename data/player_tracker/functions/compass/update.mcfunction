@@ -16,6 +16,14 @@ execute in minecraft:overworld run execute store result storage pt:compass Items
 execute in minecraft:overworld run execute store result storage pt:compass Items[].tag.LodestonePos.Z int 1 run data get entity @a[tag=tracking,limit=1] Pos[2]
 execute in minecraft:overworld run data merge block 0 -62 1 {Text1:'{"selector":"@a[tag=tracking]"}'}
 execute in minecraft:overworld run data modify storage pt:compass Items[].tag.display.Name set from block 0 -62 1 Text1
+
+execute store result score #x_pos pt.settings run data get entity @a[tag=tracking,limit=1] Pos[0]
+execute store result score #y_pos pt.settings run data get entity @a[tag=tracking,limit=1] Pos[1]
+execute store result score #z_pos pt.settings run data get entity @a[tag=tracking,limit=1] Pos[2]
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:compass",tag:{compass_type:"tracking_device"}}}] run execute if entity @a[tag=tracking,nbt={Dimension:"minecraft:overworld"}] run title @s actionbar [{"text":"[","color":"gray"},{"selector":"@a[tag=tracking,limit=1]"},{"text":"] ","color":"gray"},{"text":"x: "},{"score":{"name":"#x_pos","objective":"pt.settings"},"color":"gold"},{"text":" y: "},{"score":{"name":"#y_pos","objective":"pt.settings"},"color":"light_purple"},{"text":" z: "},{"score":{"name":"#z_pos","objective":"pt.settings"},"color":"aqua"},{"text":" [Overworld] ", "color": "green"}]
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:compass",tag:{compass_type:"tracking_device"}}}] run execute if entity @a[tag=tracking,nbt={Dimension:"minecraft:the_nether"}] run title @s actionbar [{"text":"[","color":"gray"},{"selector":"@a[tag=tracking,limit=1]"},{"text":"] ","color":"gray"},{"text":"x: "},{"score":{"name":"#x_pos","objective":"pt.settings"},"color":"gold"},{"text":" y: "},{"score":{"name":"#y_pos","objective":"pt.settings"},"color":"light_purple"},{"text":" z: "},{"score":{"name":"#z_pos","objective":"pt.settings"},"color":"aqua"},{"text":" [Nether] ", "color": "red"}]
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:compass",tag:{compass_type:"tracking_device"}}}] run execute if entity @a[tag=tracking,nbt={Dimension:"minecraft:the_end"}] run title @s actionbar [{"text":"[","color":"gray"},{"selector":"@a[tag=tracking,limit=1]"},{"text":"] ","color":"gray"},{"text":"x: "},{"score":{"name":"#x_pos","objective":"pt.settings"},"color":"gold"},{"text":" y: "},{"score":{"name":"#y_pos","objective":"pt.settings"},"color":"light_purple"},{"text":" z: "},{"score":{"name":"#z_pos","objective":"pt.settings"},"color":"aqua"},{"text":" [The End] ", "color": "dark_gray"}]
+
 tag @a[tag=tracking] remove tracking
 
 #> updates shulker box from pt:compass storage Items[]
