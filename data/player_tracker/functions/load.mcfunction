@@ -20,7 +20,7 @@ scoreboard objectives add pt.gui dummy
 scoreboard players set #current_slot pt.gui 0
 scoreboard players set #pages pt.gui 1
 ##> TODO: rename these
-scoreboard objectives add gui_count dummy
+scoreboard objectives add pt.gui_count dummy
 scoreboard objectives add pt.gui_page dummy
 
 #> Add triggers
