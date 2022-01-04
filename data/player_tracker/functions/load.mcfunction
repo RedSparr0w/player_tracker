@@ -38,7 +38,7 @@ scoreboard players reset * pt.tracking_id
 scoreboard objectives add pt.player_list trigger
 
 #> Bump reset score
-scoreboard players add count pt.reset 1
+scoreboard players add #count pt.reset 1
 
 #> Load default settings
 function player_tracker:settings/load
