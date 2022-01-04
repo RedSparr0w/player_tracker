@@ -34,5 +34,5 @@ execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:
 execute in minecraft:overworld run loot replace entity @s[nbt={Inventory:[{Slot:8b,tag:{compass_type:"tracking_device"}}]}] hotbar.8 1 mine 0 -63 1 air{drop_contents:1b}
 
 #> Remove pt:compass and block items
-# execute in minecraft:overworld run data remove storage pt:compass Items
-# execute in minecraft:overworld run data remove block 0 -63 1 Items
+execute in minecraft:overworld run data remove storage pt:compass Items
+execute in minecraft:overworld run data remove block 0 -63 1 Items
